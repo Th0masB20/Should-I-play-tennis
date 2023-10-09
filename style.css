@@ -38,6 +38,8 @@
 
 .searchItems > p{
     font-weight:bold;
+    color:white;
+    font-family:sans-serif;
 }
 
 .informationDisplay{
@@ -48,12 +50,13 @@
 }
 
 .informationDisplay p:nth-child(2){
-    font-size:35px;
+    font-size:30px;
 }
 
 .informationDisplay > p{
     color:rgba(255, 255, 255, 0.886);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 3px 3px 4px rgb(208, 208, 208);
+    font-family:sans-serif;
     font-size:25px;
     text-align:center;
 }
