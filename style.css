@@ -24,7 +24,40 @@
     width:400px;
     height:500px;
     border-radius:40px;
+    margin-top:60px;
 }
 
-.weatherCard > input{
+.searchItems > input{
+    border-radius:100px;
+    outline:none;
+    border:none;
+
+    margin-top:10px;
+    padding:7px;
+}
+
+.searchItems > p{
+    font-weight:bold;
+}
+
+.informationDisplay{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.informationDisplay p:nth-child(2){
+    font-size:35px;
+}
+
+.informationDisplay > p{
+    color:rgba(255, 255, 255, 0.886);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:25px;
+    text-align:center;
+}
+
+#weatherImg{
+    width:200px;
 }
