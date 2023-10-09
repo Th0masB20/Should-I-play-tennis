@@ -1,0 +1,30 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+.searchItems{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:35px
+}
+
+.weatherCard
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin:auto;
+    background-color: rgb(141, 252, 252);
+    width:400px;
+    height:500px;
+    border-radius:40px;
+}
+
+.weatherCard > input{
+}
