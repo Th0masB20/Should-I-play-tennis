@@ -42,6 +42,42 @@
     font-family:sans-serif;
 }
 
+#selectDateInputDiv{
+    display:flex;
+    align-items:center;
+
+    margin-top:10px;
+}
+
+[class$='Arrow']{
+    width:20px;
+}
+
+#slidingDiv{
+    position:relative;
+    width:100px;
+    height:21px;
+    overflow:hidden;
+}
+
+#dropDownDate{
+    width:100px;
+    margin-left:40px;
+
+    position:absolute;
+    left:-40%;
+
+    transition: left 1s;
+}
+
+#dateSelection{
+    width:100px;
+    position:absolute;
+    left:-150%;
+
+    transition: left 1s;
+}
+
 .informationDisplay{
     display:flex;
     flex-direction: column;
