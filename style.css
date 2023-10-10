@@ -42,6 +42,10 @@
     font-family:sans-serif;
 }
 
+#errorMessage{
+    display:none;
+}
+
 #selectDateInputDiv{
     display:flex;
     align-items:center;
@@ -53,33 +57,14 @@
     width:20px;
 }
 
-#slidingDiv{
-    position:relative;
-    width:100px;
-    height:21px;
-    overflow:hidden;
-}
-
-#dropDownDate{
-    width:100px;
-    margin-left:40px;
-
-    position:absolute;
-    left:-40%;
-
-    transition: left 1s;
-}
 
 #dateSelection{
-    width:100px;
-    position:absolute;
-    left:-150%;
-
-    transition: left 1s;
+    width:130px;
+    height:21px;
 }
 
 .informationDisplay{
-    display:flex;
+    display:none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -95,6 +80,26 @@
     font-family:sans-serif;
     font-size:25px;
     text-align:center;
+}
+
+#timeText{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+#timeOfDaySelection{
+    display:flex;
+    width:90px;
+    justify-content:space-between;
+}
+
+#timeInput{
+    display:inline-block;
+    border:none;
+    outline:none;
+
+    border-radius:0;
+    width:40px;
 }
 
 #weatherImg{

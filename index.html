@@ -12,31 +12,24 @@
         <div class="searchItems">
             <p>Enter Location</p>
             <input class="searchBar" type="text">
-            <div id="selectDateInputDiv">
-                <img src="images/leftArrow.png" class="leftArrow">
-                <div id="slidingDiv">
-                    <select id="dropDownDate">
-                        <option value="today">Today</option>
-                        <option value="tomorrow">Tomorrow</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
-                    <input type="date" id="dateSelection">
-                </div>
-                <img src="images/rightArrow.png" class="rightArrow">
+            <p id="errorMessage"></p>
+            <input type="date" id="dateSelection">
+
+            <p id="timeText">Enter time you think of playing:</p>
+            <div id="timeOfDaySelection">
+                <input type="text" id="timeInput">
+                <select id="timeAmPm">
+                    <option value="am">Am</option>
+                    <option value="pm">Pm</option>
+                </select>
             </div>
         </div>
 
         <div class="informationDisplay">
             <img src="images/sunny.png" alt="The Weather" id="weatherImg">
             <p>I should play tennis since: </p>
-            <p>The Temperature is: </p>
-            <p>The chances of rain is: </p>
+            <p id="tempDisplay">The Average Temperature is: </p>
+            <p id="weatherDisplay">The average weather is: </p>
         </div>
     </div>
 </body>
