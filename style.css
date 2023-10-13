@@ -1,0 +1,122 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+.searchItems{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:25px;
+}
+
+.weatherCard
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin:auto;
+    background-color: rgba(2, 232, 232, 0.866);
+    width:400px;
+    height:500px;
+    border-radius:40px;
+    margin-top:60px;
+}
+
+.searchItems > input{
+    border-radius:100px;
+    outline:none;
+    border:none;
+
+    margin-top:10px;
+    padding:7px;
+}
+
+.searchItems > p{
+    color:white;
+    font-family:sans-serif;
+    font-size:20px;
+}
+
+#timeOfDaySelection > input{
+    border-radius:100px;
+    outline:none;
+    border:none;
+
+    padding:7px;
+    text-align:center;
+}
+
+#errorMessage{
+    display:none;
+    margin-top:10px;
+    color:white;
+    font-family:sans-serif;
+    font-size:20px;
+}
+
+#errorMessage::first-letter
+
+#selectDateInputDiv{
+    display:flex;
+    align-items:center;
+
+    margin-top:10px;
+}
+
+[class$='Arrow']{
+    width:20px;
+}
+
+
+#dateSelection{
+    width:130px;
+    height:21px;
+}
+
+.informationDisplay{
+    display:none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.informationDisplay p:nth-child(2){
+    font-size:30px;
+}
+
+.informationDisplay > p{
+    color:rgba(255, 255, 255, 0.886);
+    text-shadow: 3px 3px 4px rgb(208, 208, 208);
+    font-family:sans-serif;
+    font-size:25px;
+    text-align:center;
+}
+
+#timeText{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+#timeOfDaySelection{
+    display:flex;
+    width:90px;
+    justify-content:space-between;
+}
+
+#timeInput{
+    display:inline-block;
+    border:none;
+    outline:none;
+
+    border-radius:0;
+    width:40px;
+}
+
+#weatherImg{
+    width:200px;
+}

@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Should I play tennis</title>
     <link rel="stylesheet" href="style.css">
-    <script src="myJs.js"></script>
+    <script src="myJs.js" defer></script>
 </head>
 <body>
-    
+    <div class="weatherCard">
+        <p id="errorMessage"></p>
+
+        <div class="searchItems">
+            <p>Enter Location</p>
+            <input class="searchBar" type="text">
+            <input type="date" id="dateSelection">
+
+            <p id="timeText">Enter time you think of playing:</p>
+            <div id="timeOfDaySelection">
+                <input type="text" id="timeInput">
+                <select id="timeAmPm">
+                    <option value="am">Am</option>
+                    <option value="pm">Pm</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="informationDisplay">
+            <img alt="The Weather" id="weatherImg">
+            <p>I should play tennis since: </p>
+            <p id="tempDisplay"></p>
+            <p id="weatherDisplay"></p>
+        </div>
+    </div>
 </body>
 </html>
