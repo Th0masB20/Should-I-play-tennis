@@ -91,7 +91,7 @@ function getDisplayWeatherData(weatherData){
     let maxCode = averageWeather(indexOfValues,weatherData)
     let weatherText = document.querySelector('#weatherDisplay');
 
-    console.log(maxCode < 20);
+    weatherText.innerHTML = 'The weather is: ';
 
     if(maxCode < 20)
     {
@@ -124,7 +124,7 @@ function getDisplayWeatherData(weatherData){
         weatherText.innerHTML += 'Thunder';
     }
 
-    document.querySelector('#tempDisplay').innerHTML += Math.round(averageTemp(indexOfValues, weatherData)) + '&degF';
+    document.querySelector('#tempDisplay').innerHTML = `The Average Temperature is: ${Math.round(averageTemp(indexOfValues, weatherData))}&degF`;
 }
 
 function enter(e){
@@ -141,7 +141,7 @@ function enter(e){
                 errorMessage.innerHTML = 'You need to add a valid <span style="color:rgba(253, 29, 29, 0.871)">DATE</span>';
                 informationDIsplay.style.display ='none';
             }
-            else if(!document.querySelector('#timeInput').value)
+            else if(!document.querySelector('#timeInput').value || isNaN(document.querySelector('#timeInput').value))
             {
                 errorMessage.style.display = 'block';
                 errorMessage.innerHTML = 'You need to add a valid <span style="color:rgba(253, 29, 29, 0.871)">TIME</span>';
